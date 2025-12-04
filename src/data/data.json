@@ -1,0 +1,172 @@
+{
+    "navbar": {
+        "logo": "favicon-1-150x150.png",
+        "name": "nylas",
+        "buttons": [
+            {
+                "label": "Log in >",
+                "variant": "soft"
+            },
+            {
+                "label": "Build for free >",
+                "variant": "secondary"
+            }
+        ],
+        "navLinks": [
+            {
+                "text": "Products",
+                "path": "/",
+                "icon": "MdKeyboardArrowDown"
+            },
+            {
+                "text": "Solutions",
+                "path": "/"
+            },
+            {
+                "text": "Developers",
+                "path": "/",
+                "icon": "MdKeyboardArrowDown"
+            },
+            {
+                "text": "Resources",
+                "path": "/",
+                "icon": "MdKeyboardArrowDown"
+            },
+            {
+                "text": "Pricing",
+                "path": "/"
+            },
+            {
+                "text": "Contact sales",
+                "path": "/",
+                "icon": "MdKeyboardArrowRight"
+            }
+        ]
+    },
+    "hero": {
+        "background": "nylas-communicatons-apis.png",
+        "caption": "Integrate inbox, calendar and meetings into your app",
+        "description": "Nylas is the API that lets you integrate with Gmail, Microsoft, IMAP, Zoom, and 250+ mail, calendar and meeting providers in 5 minutes.",
+        "button1": "Get API Key >",
+        "button2": "Documentation >"
+    },
+    "codeSnippets": [
+        {
+            "title": "Send a Calendar Event invite on behalf of your user",
+            "language": "Python",
+            "lines": [
+                "from nylas import Client",
+                "nylas = Client(api_key='<NYLAS_API_KEY>')",
+                "event = nylas.events.create(",
+                "'<USER_GRANT_ID>',",
+                "request_body={",
+                "\"title\": \"<EVENT_TITLE>\",",
+                "\"when\": {\"start_time\": \"<START_TIME>\", \"end_time\": \"<END_TIME>\"},",
+                "\"participants\":{\"email\":\"<RECIPIENT_EMAIL>\",\"name\": \"<RECIPIENT_NAME>\"}",
+                "},",
+                "query_params={\"calendar_id\": \"<USER_CALENDAR_ID>\"}",
+                ")"
+            ]
+        },
+        {
+            "title": "Send a Calendar Event invite on behalf of your user",
+            "language": "Ruby",
+            "lines": [
+                "require 'nylas'",
+                "nylas =Nylas::Client.new(api_key: '<NYLAS_API_KEY>')",
+                "event,_=nylas.events.create(",
+                "identifier:'<USER_GRANT_ID>',",
+                "query_params:{calendar_id:'<USER_CALENDAR_ID>'},",
+                "request_body:{",
+                "title:'<EVENT_TITLE>',",
+                "when:{start_time:'<START_TIME>',end_time:'<END_TIME>' },",
+                "participants:[{name:'<RECIPIENT_NAME>',email:'<RECIPIENT_EMAIL>'}]",
+                "}",
+                ")"
+            ]
+        },
+        {
+            "title": "Send a Calendar Event invite on behalf of your user",
+            "language": "Node.js",
+            "lines": [
+                "from nylas import Client",
+                "nylas = Client(api_key='<NYLAS_API_KEY>')",
+                "message = nylas.messages.send(",
+                "'<USER_GRANT_ID>',",
+                "request_body={",
+                "to: [{ name: '<RECIPIENT_NAME>', ",
+                "email: '<RECIPIENT_EMAIL>' }],",
+                "subject: '<EMAIL_SUBJECT>',",
+                "body: '<EMAIL_BODY>'",
+                " }",
+                ")"
+            ]
+        },
+        {
+            "title": "Send an Email using PHP (Example Snippet)",
+            "language": "PHP",
+            "lines": [
+                "<?php",
+                "$to = 'recipient@example.com';",
+                "$subject = 'Test Email';",
+                "$message = 'Hello! This is a sample email.';",
+                "$headers = 'From: sender@example.com';",
+                "if (mail($to, $subject, $message, $headers)) {",
+                "    echo 'Email sent successfully!';",
+                "} else {",
+                "    echo 'Email failed to send.';",
+                "}",
+                "?>"
+            ]
+        }
+    ],
+    "logos": [
+        {
+            "image": "WIX-1.png"
+        },
+        {
+            "image": "logo-crunchbase.svg"
+        },
+        {
+            "image": "Compass.png"
+        },
+        {
+            "image": "logo-ceridian-1.svg"
+        },
+        {
+            "image": "TalentReef-Mitratech-Logo-Color94.png"
+        },
+        {
+            "image": "Apollo.io-Logo.png"
+        }
+    ],
+    
+        "MeetNylas": {
+            "tag": "Meet Nylas",
+            "title": "A developer-first solution for custom communication experiences",
+            "description": "Securely integrate with every email, calendar, and contacts provider using a single interface to streamline your users’ workflows. Build real-time, bi-directional communications in your app up to 40x faster, saving months of development time.",
+            "images": [
+                {
+                    "image": "nylas-email-api-solution.png",
+                    "title": "Email API",
+                    "description": "Sync, send, and receive messages to build contextual email, automated outreach, and other in-app experiences.",
+                    "caption": "Explore the Email API",
+                    "icon": "MdArrowForward"
+                },
+                {
+                    "image": "nylas-calendar-api-solution.png",
+                    "title": "Calendar API",
+                    "description": "Retrieve and manage calendars and events to build scheduling automation, calendar management, and other scheduling experiences.",
+                    "caption": "Explore the Calendar API",
+                    "icon": "MdArrowForward"
+                },
+                {
+                    "image": "nylas-notetaker-api.png",
+                    "title": "Notetaker API",
+                    "description": "Join, record, and transcribe meetings across platforms to build AI-powered meeting and notes experiences.",
+                    "caption": "Explore the Notetaker API",
+                    "icon": "MdArrowForward"
+                }
+            ]
+        }
+}
