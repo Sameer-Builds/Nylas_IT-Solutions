@@ -140,33 +140,65 @@
             "image": "Apollo.io-Logo.png"
         }
     ],
-    
-        "MeetNylas": {
-            "tag": "Meet Nylas",
-            "title": "A developer-first solution for custom communication experiences",
-            "description": "Securely integrate with every email, calendar, and contacts provider using a single interface to streamline your users’ workflows. Build real-time, bi-directional communications in your app up to 40x faster, saving months of development time.",
-            "images": [
-                {
-                    "image": "nylas-email-api-solution.png",
-                    "title": "Email API",
-                    "description": "Sync, send, and receive messages to build contextual email, automated outreach, and other in-app experiences.",
-                    "caption": "Explore the Email API",
-                    "icon": "MdArrowForward"
-                },
-                {
-                    "image": "nylas-calendar-api-solution.png",
-                    "title": "Calendar API",
-                    "description": "Retrieve and manage calendars and events to build scheduling automation, calendar management, and other scheduling experiences.",
-                    "caption": "Explore the Calendar API",
-                    "icon": "MdArrowForward"
-                },
-                {
-                    "image": "nylas-notetaker-api.png",
-                    "title": "Notetaker API",
-                    "description": "Join, record, and transcribe meetings across platforms to build AI-powered meeting and notes experiences.",
-                    "caption": "Explore the Notetaker API",
-                    "icon": "MdArrowForward"
-                }
-            ]
-        }
+    "MeetNylas": {
+        "tag": "Meet Nylas",
+        "title": "A developer-first solution for custom communication experiences",
+        "description": "Securely integrate with every email, calendar, and contacts provider using a single interface to streamline your users’ workflows. Build real-time, bi-directional communications in your app up to 40x faster, saving months of development time.",
+        "images": [
+            {
+                "image": "nylas-email-api-solution.png",
+                "title": "Email API",
+                "description": "Sync, send, and receive messages to build contextual email, automated outreach, and other in-app experiences.",
+                "caption": "Explore the Email API",
+                "icon": "MdArrowForward"
+            },
+            {
+                "image": "nylas-calendar-api-solution.png",
+                "title": "Calendar API",
+                "description": "Retrieve and manage calendars and events to build scheduling automation, calendar management, and other scheduling experiences.",
+                "caption": "Explore the Calendar API",
+                "icon": "MdArrowForward"
+            },
+            {
+                "image": "nylas-notetaker-api.png",
+                "title": "Notetaker API",
+                "description": "Join, record, and transcribe meetings across platforms to build AI-powered meeting and notes experiences.",
+                "caption": "Explore the Notetaker API",
+                "icon": "MdArrowForward"
+            }
+        ]
+    },
+    "AccordionSection": {
+        "title": "Powerful APIs for any industry",
+        "Accordion": [
+            {
+                "title": "Embed email and scheduling in your CRM",
+                "summary": "Simplify client communications and scheduling by seamlessly integrating with all email providers in your CRM, boosting customer interactions and team efficiency.",
+                "caption": "Learn More",
+                "icon": "MdArrowForward",
+                "image": "apis-for-customer-relationship-management.png"
+            },
+            {
+                "title": "Revolutionize the real estate software experience",
+                "summary": "Seamlessly elevate your real estate platform with Nylas’ streamlined communication, data-driven client management, and automated virtual tour scheduling all in one place.",
+                "caption": "Learn More",
+                "icon": "MdArrowForward",
+                "image": "Revolutionize-the-real-estate-software-experience.webp"
+            },
+            {
+                "title": "Accelerate time-to-hire",
+                "summary": "Enhance your application tracking system with automated email and scheduling features that take the pain out of hiring.",
+                "caption": "Learn More",
+                "icon": "MdArrowForward",
+                "image": "accelerate-time-to-hire-1024x838.png"
+            },
+            {
+                "title": "Enhance e-sign workflows across all email providers",
+                "summary": "Boost document delivery while maintaining end-user trust with secure and reliable contextual email capabilities. ",
+                "caption": "Learn More",
+                "icon": "MdArrowForward",
+                "image": "Enhance-e-sign-workflows-across-all-email-providers.webp"
+            }
+        ]
+    }
 }

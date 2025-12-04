@@ -3,6 +3,7 @@ import Navbar from './Components/Navbar'
 import Hero from './Components/Hero'
 import Logos from './Components/Logos'
 import MeetNylas from './Components/MeetNylas'
+import AccordionSection from './Components/AccordionSection'
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Hero />
       <Logos />
       <MeetNylas />
+      <AccordionSection />
     </div>
   )
 }
