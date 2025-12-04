@@ -16,7 +16,6 @@ function AccordionSection() {
         if (!isExpanded) return;
         setExpanded(index);
     };
-
     return (
         <section className="container p-6 mx-auto">
             <div className="pb-10">
@@ -25,9 +24,11 @@ function AccordionSection() {
                 </p>
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+
                 <div className="space-y-4">
                     {AccordionSection.Accordion.map((item, index) => {
                         const isOpen = expanded === index;
+
                         return (
                             <Accordion
                                 key={index}
@@ -38,21 +39,27 @@ function AccordionSection() {
                                 sx={{
                                     borderBottom: "1px solid #e5e7eb",
                                     "&:before": { display: "none" },
-                                }}  >
+                                }}>
                                 <AccordionSummary expandIcon={<ExpandMoreIcon />}>
                                     {!isOpen && (
                                         <Typography sx={{ fontSize: "1.25rem", fontWeight: 500 }}>
                                             {item.title}
                                         </Typography>
+
                                     )}
                                 </AccordionSummary>
 
                                 <AccordionDetails>
                                     <div className="bg-[#e8f0ff] rounded-2xl p-6 shadow-sm">
-
                                         <h3 className="text-2xl font-semibold mb-4">
                                             {item.title}
                                         </h3>
+                                        <div className="mb-6 block lg:hidden">
+                                            <img
+                                                src={item.image}
+                                                alt={item.title}
+                                                className="w-full max-w-md mx-auto rounded-xl object-contain" />
+                                        </div>
                                         <p className="text-gray-700 mb-6 text-lg">
                                             {item.summary}
                                         </p>
@@ -62,14 +69,13 @@ function AccordionSection() {
                                                 →
                                             </span>
                                         </button>
-
                                     </div>
                                 </AccordionDetails>
                             </Accordion>
                         );
                     })}
                 </div>
-                <div className="flex justify-center ">
+                <div className="hidden lg:flex justify-center">
                     <Fade key={expanded} in timeout={400}>
                         <img
                             src={AccordionSection.Accordion[expanded]?.image}
@@ -82,4 +88,5 @@ function AccordionSection() {
         </section>
     );
 }
+
 export default AccordionSection;
