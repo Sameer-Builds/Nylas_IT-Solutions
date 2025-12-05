@@ -17,7 +17,7 @@ function AccordionSection() {
         setExpanded(index);
     };
     return (
-        <section className="container p-6 mx-auto">
+        <section className="container px-6 py-10 mx-auto">
             <div className="pb-10">
                 <p className="text-center text-4xl tracking-wide font-semibold">
                     {AccordionSection.title}

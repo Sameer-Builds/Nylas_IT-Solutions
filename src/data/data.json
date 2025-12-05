@@ -200,5 +200,32 @@
                 "image": "Enhance-e-sign-workflows-across-all-email-providers.webp"
             }
         ]
+    },
+    "DevelopmentSpeed": {
+        "tag": "For developers",
+        "title": "Speed up your development with easy-to-use APIs",
+        "subtitle": "Nylas APIs simplifies integration complexities, offering a unified API solution tailored for developers.",
+        "infoCards": [
+            {
+                "image": "Webhooks-2.svg",
+                "title": "Developer-friendly",
+                "description": "Leverage Nylas Docs, SDKs, CLI, and code samples to reduce time building and maintaining infrastructure."
+            },
+            {
+                "image": "Lightbulb.svg",
+                "title": "Reliable performance",
+                "description": "Ship features faster with security, scalability, and performance with a 99.9% guaranteed uptime."
+            },
+            {
+                "image": "Send-1.svg",
+                "title": "Instant responses",
+                "description": "Instant email and event data as soon as your users connect, with no sync delays."
+            },
+            {
+                "image": "Cloud.svg",
+                "title": "Webhooks",
+                "description": "Receive real-time notifications to your application that will scale with you."
+            }
+        ]
     }
 }

@@ -4,6 +4,8 @@ import Hero from './Components/Hero'
 import Logos from './Components/Logos'
 import MeetNylas from './Components/MeetNylas'
 import AccordionSection from './Components/AccordionSection'
+import DevelopmentSpeed from './Components/DevelopmentSpeed'
+import InfoCard from './Components/InfoCard'
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
       <Logos />
       <MeetNylas />
       <AccordionSection />
+      <DevelopmentSpeed />
+      <InfoCard />
     </div>
   )
 }
