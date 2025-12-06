@@ -2,7 +2,7 @@ import React from "react";
 
 function InfoCard({ image, title, description }) {
     return (
-        <div className="p-4">
+        <div className="p-8">
             {image && (
                 <img
                     src={image}
@@ -11,11 +11,11 @@ function InfoCard({ image, title, description }) {
                 />
             )}
 
-            <h3 className="text-2xl font-semibold mb-2">
+            <h3 className=" text-white text-2xl font-semibold mb-2">
                 {title}
             </h3>
 
-            <p className=" text-blue-900  leading-relaxed">
+            <p className=" text-gray-400 font-semibold    leading-relaxed">
                 {description}
             </p>
         </div>

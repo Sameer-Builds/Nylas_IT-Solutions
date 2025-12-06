@@ -6,6 +6,8 @@ import MeetNylas from './Components/MeetNylas'
 import AccordionSection from './Components/AccordionSection'
 import DevelopmentSpeed from './Components/DevelopmentSpeed'
 import InfoCard from './Components/InfoCard'
+import Security from './Components/Security'
+import Footer from './Components/Footer'
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
       <AccordionSection />
       <DevelopmentSpeed />
       <InfoCard />
+      <Security />
+    
     </div>
   )
 }

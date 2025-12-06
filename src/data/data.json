@@ -202,9 +202,13 @@
         ]
     },
     "DevelopmentSpeed": {
-        "tag": "For developers",
-        "title": "Speed up your development with easy-to-use APIs",
-        "subtitle": "Nylas APIs simplifies integration complexities, offering a unified API solution tailored for developers.",
+        "information": [
+            {
+                "tag": "For developers",
+                "title": "Speed up your development with easy-to-use APIs",
+                "description": "Nylas APIs simplifies integration complexities, offering a unified API solution tailored for developers."
+            }
+        ],
         "infoCards": [
             {
                 "image": "Webhooks-2.svg",
@@ -227,5 +231,150 @@
                 "description": "Receive real-time notifications to your application that will scale with you."
             }
         ]
-    }
+    },
+    "security": {
+        "information": [
+            {
+                "tag": "Security",
+                "title": "Security built into the foundation of our platform",
+                "description": "Our enterprise-grade security is backed by compliance with industry-leading standards."
+            }
+        ],
+        "logos": [
+            {
+                "image": "nylas-email-and-calendar-api-HIPAA.svg"
+            },
+            {
+                "image": "nylas-email-and-calendar-api-ISO.svg"
+            },
+            {
+                "image": "nylas-email-and-calendar-api-SOC2.svg"
+            },
+            {
+                "image": "nylas-email-and-calendar-api-GDPR.svg"
+            },
+            {
+                "image": "nylas-email-and-calendar-api-CCPA.svg"
+            }
+        ],
+        "achievements": [
+            {
+                "title": "34.5B+",
+                "description": "API transactions and 200TB of data processed daily."
+            },
+            {
+                "title": "99.99%",
+                "description": "historical uptime for Nylas services."
+            },
+            {
+                "title": "Save 50%",
+                "description": "of dev resources to focus on core product functionality."
+            }
+        ],
+        "image": "nylas-security-globe.png"
+    },
+    "future": {
+        "title": "Start building the future",
+        "caption": "Get your API key and connect up to 5 accounts for free.",
+        "button1": "Build for free",
+        "button2": "Contact sales →",
+        "image": "Group-117.png"
+    },
+    "footer": {
+        "logo": "favicon-1-150x150.png",
+        "name": "nylas",
+        "socialIcons": [
+            {
+                "icon": "FaGithub"
+            },
+            {
+                "icon": "FaLinkedin"
+            },
+            {
+                "icon": "FaYoutube"
+            },
+            {
+                "icon": "RiTwitterXLine"
+            }
+        ],
+        "sections": [
+                {
+                    "title": "Contact",
+                    "links": [
+                        "Request a demo",
+                        "Contact Sales",
+                        "Support"
+                    ]
+                },
+                {
+                    "title": "Products",
+                    "links": [
+                        "Email API",
+                        "Calendar API",
+                        "Scheduler",
+                        "Contacts API",
+                        "Notetaker API",
+                        "Pricing",
+                        "Savings calculator"
+                    ]
+                },
+                {
+                    "title": "Solutions",
+                    "links": [
+                        "Calendar management",
+                        "Embedded email",
+                        "Scheduling automation",
+                        "Automated outreach"
+                    ]
+                },
+                {
+                    "title": "Industries",
+                    "links": [
+                        "Telehealth",
+                        "Marketplaces",
+                        "Recruiting",
+                        "Document management",
+                        "Real estate",
+                        "Communications software",
+                        "Productivity"
+                    ]
+                },
+                {
+                    "title": "Developers",
+                    "links": [
+                        "Build for free",
+                        "Docs",
+                        "SDKs",
+                        "Tutorials",
+                        "API status",
+                        "Changelog",
+                        "Support",
+                        "Developer forums"
+                    ]
+                },
+                {
+                    "title": "Company",
+                    "links": [
+                        "About us",
+                        "Leadership",
+                        "Careers",
+                        "Diversity",
+                        "Podcasts",
+                        "Newsroom",
+                        "Blog",
+                        "Security"
+                    ]
+                }
+            ],
+            "bottom": {
+                "copyright": "© 2025 Nylas. All rights reserved.",
+                "links": [
+                    "Terms of Service",
+                    "Privacy Policy",
+                    "Privacy Settings",
+                    "Copyright Policy",
+                    "Do Not Sell or Share My Personal Information"
+                ]
+            }
+        } 
 }
