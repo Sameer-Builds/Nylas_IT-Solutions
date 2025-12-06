@@ -20,7 +20,7 @@ function App() {
       <DevelopmentSpeed />
       <InfoCard />
       <Security />
-    
+      <Footer />
     </div>
   )
 }
