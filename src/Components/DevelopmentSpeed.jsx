@@ -12,7 +12,7 @@ function DevelopmentSpeed() {
         <div className='bg-[#111323]'>
         <div className="container px-6 py-16">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
-                <div className="space-y-6">
+                <div className="">
                     <div>
                         {DevelopmentSpeed.information.map((item, index) => (
                             <Information
@@ -24,8 +24,7 @@ function DevelopmentSpeed() {
                         ))}
                     </div>
 
-                    {/* INFO CARDS */}
-                    <div className="grid grid-cols-1 md:grid-cols-2 ">
+                    <div className="grid grid-cols-1 md:grid-cols-2 space-x-3 space-y-5 pt-10 ">
                         {DevelopmentSpeed.infoCards.map((item, index) => (
                             <InfoCard
                                 key={index}
@@ -38,7 +37,6 @@ function DevelopmentSpeed() {
 
                 </div>
 
-                {/* RIGHT SIDE — CodeCard */}
                 <div>
                     <CodeCard />
                 </div>

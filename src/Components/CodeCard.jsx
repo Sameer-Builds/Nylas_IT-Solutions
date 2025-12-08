@@ -36,7 +36,7 @@ function CodeCard() {
 
     return (
         <>
-            <div className="bg-[#1a2340]">
+            <div className="bg-[#1a2340] rounded-2xl ">
                 <div className=" text-white p-8 rounded-2xl shadow-xl w-full max-w-5xl mx-auto">
                     <div className="flex justify-between items-center mb-6">
 
