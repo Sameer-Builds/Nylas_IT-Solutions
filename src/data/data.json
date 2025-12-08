@@ -201,6 +201,142 @@
             }
         ]
     },
+"codeSnippet":{
+        "titles":[
+            "Get the last 5 email messages from a user's inbox",
+            "Get the last 5 events from a user's calender"
+        ],
+
+    
+    "code": [
+        {
+            "image": "Node.svg",
+            "title": "Node.js",
+            "lines": [
+                "const events = await nylas.events.list({",
+                "  identifier: 1,",
+                "  queryParams: {",
+                "    calendarId: 2",
+                "  }",
+                "});"
+            ]
+        },
+        {
+            "image": "Ruby.svg",
+            "title": "Ruby",
+            "lines": [
+                "require 'nylas'",
+                "",
+                "nylas = Nylas::Client.new(api_key: \"<API_KEY>\")",
+                "",
+                "# Call a list of calendars",
+                "calendars, _request_ids = nylas.calendars.list(identifier: \"<GRANT_ID>\", query_params: {limit: 5})",
+                "",
+                "calendars.each {|calendar|",
+                "    puts calendar",
+                "}"
+            ]
+        },
+        {
+            "image": "Python.svg",
+            "title": "Python",
+            "lines": [
+                "events = nylas.events.list(",
+                "  grant_id,",
+                "  query_params={",
+                "    \"calendar_id\": 1",
+                "  }",
+                ")"
+            ]
+        },
+        {
+            "image": "Java.svg",
+            "title": "Java",
+            "lines": [
+                "import com.nylas.NylasClient;",
+                "import com.nylas.models.*;",
+                "import java.util.List;",
+                "",
+                "public class read_calendars {",
+                "    public static void main(String[] args) throws NylasSdkTimeoutError, NylasApiError {",
+                "        NylasClient nylas = new NylasClient.Builder(\"<API_KEY>\").build();",
+                "        ListCalendersQueryParams listCalendersQueryParams = new",
+                "        ListCalendersQueryParams.Builder().limit(5).build();",
+                "        List<Calendar> calendars = nylas.calendars().list(dotenv.get(\"CALENDAR_ID\"),",
+                "        listCalendersQueryParams).getData();",
+                "",
+                "        for (Calendar calendar : calendars) {",
+                "            System.out.println(calendar);",
+                "        }",
+                "    }",
+                "}"
+            ]
+        },
+        {
+            "image": "Curl.svg",
+            "title": "Curl",
+            "lines": [
+                "curl --request GET \\",
+                "--url https://api.us.nylas.com/v3/grants/<GRANT_ID>/events \\",
+                "--header 'Accept: application/json' \\",
+                "--header 'Authorization: Bearer <API_KEY_OR_ACCESS_TOKEN>' \\",
+                "--header 'Content-Type: application/json'"
+            ]
+        },
+        {
+            "image": "Response.svg",
+            "title": "Response",
+            "lines": [
+                "{",
+                "  \"type\": \"event.created1\",",
+                "  \"data\": {",
+                "    \"object\": {",
+                "      \"busy\": true,",
+                "      \"calendar_id\": \"mock-name%40nylas.com\",",
+                "      \"created_at\": 1234567890,",
+                "      \"description\": \"mock description\",",
+                "      \"hide_participants\": false,",
+                "      \"ical_uid\": \"mock_uids@google.com\",",
+                "      \"id\": \"mock-data-id\",",
+                "      \"object\": \"event\",",
+                "      \"owner\": \"Mock Owner \",",
+                "      \"organizer\": {",
+                "        \"name\": \"mock organizer name\",",
+                "        \"email\": \"mock_email@example.com\"",
+                "      },",
+                "      \"participants\": [",
+                "        {",
+                "          \"email\": \"mockParticipantsA@example.com\",",
+                "          \"name\": \"mockParticipantsA\",",
+                "          \"status\": \"yes\"",
+                "        },",
+                "        {",
+                "          \"email\": \"mockParticipantsB@example.comm\",",
+                "          \"name\": \"mockParticipantsB\",",
+                "          \"status\": \"noreply\"",
+                "        }",
+                "      ],",
+                "      \"read_only\": false,",
+                "      \"reminders\": null,",
+                "      \"status\": \"confirmed\",",
+                "      \"title\": \"mock_title\",",
+                "      \"updated_at\": 1234567890,",
+                "      \"when\": {",
+                "        \"start_time\": 1234567890,",
+                "        \"start_timezone\": \"America/Edmonton\",",
+                "        \"end_time\": 1234567890,",
+                "        \"end_timezone\": \"America/Edmonton\",",
+                "        \"object\": \"timespan\"",
+                "      }",
+                "    }",
+                "  }",
+                "}"
+            ]
+        }
+    ],
+    "icon": "FaGithub",
+    "text": "View on Github"
+},
     "DevelopmentSpeed": {
         "information": [
             {
@@ -209,6 +345,7 @@
                 "description": "Nylas APIs simplifies integration complexities, offering a unified API solution tailored for developers."
             }
         ],
+
         "infoCards": [
             {
                 "image": "Webhooks-2.svg",
@@ -298,83 +435,83 @@
             }
         ],
         "sections": [
-                {
-                    "title": "Contact",
-                    "links": [
-                        "Request a demo",
-                        "Contact Sales",
-                        "Support"
-                    ]
-                },
-                {
-                    "title": "Products",
-                    "links": [
-                        "Email API",
-                        "Calendar API",
-                        "Scheduler",
-                        "Contacts API",
-                        "Notetaker API",
-                        "Pricing",
-                        "Savings calculator"
-                    ]
-                },
-                {
-                    "title": "Solutions",
-                    "links": [
-                        "Calendar management",
-                        "Embedded email",
-                        "Scheduling automation",
-                        "Automated outreach"
-                    ]
-                },
-                {
-                    "title": "Industries",
-                    "links": [
-                        "Telehealth",
-                        "Marketplaces",
-                        "Recruiting",
-                        "Document management",
-                        "Real estate",
-                        "Communications software",
-                        "Productivity"
-                    ]
-                },
-                {
-                    "title": "Developers",
-                    "links": [
-                        "Build for free",
-                        "Docs",
-                        "SDKs",
-                        "Tutorials",
-                        "API status",
-                        "Changelog",
-                        "Support",
-                        "Developer forums"
-                    ]
-                },
-                {
-                    "title": "Company",
-                    "links": [
-                        "About us",
-                        "Leadership",
-                        "Careers",
-                        "Diversity",
-                        "Podcasts",
-                        "Newsroom",
-                        "Blog",
-                        "Security"
-                    ]
-                }
-            ],
-            "bottom": {
-                "copyright": "© 2025 Nylas. All rights reserved.",
+            {
+                "title": "Contact",
                 "links": [
-                    "Terms of Service",
-                    "Privacy Policy",
-                    "Privacy Settings",
-                    "Copyright Policy",
-                    "Do Not Sell or Share My Personal Information"
+                    "Request a demo",
+                    "Contact Sales",
+                    "Support"
+                ]
+            },
+            {
+                "title": "Products",
+                "links": [
+                    "Email API",
+                    "Calendar API",
+                    "Scheduler",
+                    "Contacts API",
+                    "Notetaker API",
+                    "Pricing",
+                    "Savings calculator"
+                ]
+            },
+            {
+                "title": "Solutions",
+                "links": [
+                    "Calendar management",
+                    "Embedded email",
+                    "Scheduling automation",
+                    "Automated outreach"
+                ]
+            },
+            {
+                "title": "Industries",
+                "links": [
+                    "Telehealth",
+                    "Marketplaces",
+                    "Recruiting",
+                    "Document management",
+                    "Real estate",
+                    "Communications software",
+                    "Productivity"
+                ]
+            },
+            {
+                "title": "Developers",
+                "links": [
+                    "Build for free",
+                    "Docs",
+                    "SDKs",
+                    "Tutorials",
+                    "API status",
+                    "Changelog",
+                    "Support",
+                    "Developer forums"
+                ]
+            },
+            {
+                "title": "Company",
+                "links": [
+                    "About us",
+                    "Leadership",
+                    "Careers",
+                    "Diversity",
+                    "Podcasts",
+                    "Newsroom",
+                    "Blog",
+                    "Security"
                 ]
             }
-        } 
+        ],
+        "bottom": {
+            "copyright": "© 2025 Nylas. All rights reserved.",
+            "links": [
+                "Terms of Service",
+                "Privacy Policy",
+                "Privacy Settings",
+                "Copyright Policy",
+                "Do Not Sell or Share My Personal Information"
+            ]
+        }
+    }
 }

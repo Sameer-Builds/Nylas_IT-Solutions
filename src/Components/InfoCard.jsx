@@ -2,7 +2,7 @@ import React from "react";
 
 function InfoCard({ image, title, description }) {
     return (
-        <div className="p-8">
+        <div className="px-8 py-4">
             {image && (
                 <img
                     src={image}
