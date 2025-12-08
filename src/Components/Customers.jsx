@@ -93,7 +93,7 @@ function CompanyShowcase() {
                             <div className="flex flex-wrap gap-4 mt-3">
                                 {selected.products_used.map((item, idx) => (
                                     <div key={idx}
-                                        className="flex items-center gap-2 px-4 py-2 rounded-full border" >
+                                        className="flex items-center gap-2 px-6 py-2 rounded-full border" >
                                         {item.endsWith(".svg") ?
                                             (<img src={item} className="w-5 h-5" />) :
                                             (<p className="text-sm text-gray-700">{item}</p>)}

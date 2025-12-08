@@ -356,6 +356,7 @@
                 ],
                 "cta": "Read the full story → ",
                 "person": {
+                    "image":"Monika.png",
                     "name": "Monika Abraham",
                     "role": "Product Ops Manager @ Crunchbase"
                 },
@@ -381,6 +382,7 @@
                 ],
                 "cta": "Read the full story → ",
                 "person": {
+                    "image":"Sefan.png",
                     "name": "Stefan Roesch",
                     "role": "Software Engineer @ Dialpad"
                 },
@@ -399,6 +401,7 @@
                 "headline": "Salesloft partners with Nylas to unlock new enterprise market",
                 "quote": "“We have millions of emails sent each week. Nylas frees us up to focus on delivering new features to our customers and working with our data science team on exciting new projects.”",
                 "person": {
+                    "image":"nora.png",
                     "name": "Nora Ignatius",
                     "role": "Product Manager @ Salesloft"
                 },
@@ -437,6 +440,7 @@
                 ],
                 "cta": "Watch the video → ",
                 "person": {
+                    "image":"john.png", 
                     "name": "John Whyte",
                     "role": "Director of Product Management @ Ceridian"
                 },
