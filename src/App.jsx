@@ -8,6 +8,7 @@ import DevelopmentSpeed from './Components/DevelopmentSpeed'
 import InfoCard from './Components/InfoCard'
 import Security from './Components/Security'
 import Footer from './Components/Footer'
+import Customers from './Components/Customers'
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <AccordionSection />
       <DevelopmentSpeed />
       <InfoCard />
+      <Customers />
       <Security />
       <Footer />
     </div>

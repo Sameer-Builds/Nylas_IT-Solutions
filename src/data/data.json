@@ -201,142 +201,253 @@
             }
         ]
     },
-"codeSnippet":{
-        "titles":[
+    "codeSnippet": {
+        "titles": [
             "Get the last 5 email messages from a user's inbox",
             "Get the last 5 events from a user's calender"
         ],
-
-    
-    "code": [
-        {
-            "image": "Node.svg",
-            "title": "Node.js",
-            "lines": [
-                "const events = await nylas.events.list({",
-                "  identifier: 1,",
-                "  queryParams: {",
-                "    calendarId: 2",
-                "  }",
-                "});"
-            ]
-        },
-        {
-            "image": "Ruby.svg",
-            "title": "Ruby",
-            "lines": [
-                "require 'nylas'",
-                "",
-                "nylas = Nylas::Client.new(api_key: \"<API_KEY>\")",
-                "",
-                "# Call a list of calendars",
-                "calendars, _request_ids = nylas.calendars.list(identifier: \"<GRANT_ID>\", query_params: {limit: 5})",
-                "",
-                "calendars.each {|calendar|",
-                "    puts calendar",
-                "}"
-            ]
-        },
-        {
-            "image": "Python.svg",
-            "title": "Python",
-            "lines": [
-                "events = nylas.events.list(",
-                "  grant_id,",
-                "  query_params={",
-                "    \"calendar_id\": 1",
-                "  }",
-                ")"
-            ]
-        },
-        {
-            "image": "Java.svg",
-            "title": "Java",
-            "lines": [
-                "import com.nylas.NylasClient;",
-                "import com.nylas.models.*;",
-                "import java.util.List;",
-                "",
-                "public class read_calendars {",
-                "    public static void main(String[] args) throws NylasSdkTimeoutError, NylasApiError {",
-                "        NylasClient nylas = new NylasClient.Builder(\"<API_KEY>\").build();",
-                "        ListCalendersQueryParams listCalendersQueryParams = new",
-                "        ListCalendersQueryParams.Builder().limit(5).build();",
-                "        List<Calendar> calendars = nylas.calendars().list(dotenv.get(\"CALENDAR_ID\"),",
-                "        listCalendersQueryParams).getData();",
-                "",
-                "        for (Calendar calendar : calendars) {",
-                "            System.out.println(calendar);",
-                "        }",
-                "    }",
-                "}"
-            ]
-        },
-        {
-            "image": "Curl.svg",
-            "title": "Curl",
-            "lines": [
-                "curl --request GET \\",
-                "--url https://api.us.nylas.com/v3/grants/<GRANT_ID>/events \\",
-                "--header 'Accept: application/json' \\",
-                "--header 'Authorization: Bearer <API_KEY_OR_ACCESS_TOKEN>' \\",
-                "--header 'Content-Type: application/json'"
-            ]
-        },
-        {
-            "image": "Response.svg",
-            "title": "Response",
-            "lines": [
-                "{",
-                "  \"type\": \"event.created1\",",
-                "  \"data\": {",
-                "    \"object\": {",
-                "      \"busy\": true,",
-                "      \"calendar_id\": \"mock-name%40nylas.com\",",
-                "      \"created_at\": 1234567890,",
-                "      \"description\": \"mock description\",",
-                "      \"hide_participants\": false,",
-                "      \"ical_uid\": \"mock_uids@google.com\",",
-                "      \"id\": \"mock-data-id\",",
-                "      \"object\": \"event\",",
-                "      \"owner\": \"Mock Owner \",",
-                "      \"organizer\": {",
-                "        \"name\": \"mock organizer name\",",
-                "        \"email\": \"mock_email@example.com\"",
-                "      },",
-                "      \"participants\": [",
-                "        {",
-                "          \"email\": \"mockParticipantsA@example.com\",",
-                "          \"name\": \"mockParticipantsA\",",
-                "          \"status\": \"yes\"",
-                "        },",
-                "        {",
-                "          \"email\": \"mockParticipantsB@example.comm\",",
-                "          \"name\": \"mockParticipantsB\",",
-                "          \"status\": \"noreply\"",
-                "        }",
-                "      ],",
-                "      \"read_only\": false,",
-                "      \"reminders\": null,",
-                "      \"status\": \"confirmed\",",
-                "      \"title\": \"mock_title\",",
-                "      \"updated_at\": 1234567890,",
-                "      \"when\": {",
-                "        \"start_time\": 1234567890,",
-                "        \"start_timezone\": \"America/Edmonton\",",
-                "        \"end_time\": 1234567890,",
-                "        \"end_timezone\": \"America/Edmonton\",",
-                "        \"object\": \"timespan\"",
-                "      }",
-                "    }",
-                "  }",
-                "}"
-            ]
-        }
-    ],
-    "icon": "FaGithub",
-    "text": "View on Github"
-},
+        "code": [
+            {
+                "image": "Node.svg",
+                "title": "Node.js",
+                "lines": [
+                    "const events = await nylas.events.list({",
+                    "  identifier: 1,",
+                    "  queryParams: {",
+                    "    calendarId: 2",
+                    "  }",
+                    "});"
+                ]
+            },
+            {
+                "image": "Ruby.svg",
+                "title": "Ruby",
+                "lines": [
+                    "require 'nylas'",
+                    "",
+                    "nylas = Nylas::Client.new(api_key: \"<API_KEY>\")",
+                    "",
+                    "# Call a list of calendars",
+                    "calendars, _request_ids = nylas.calendars.list(identifier: \"<GRANT_ID>\", query_params: {limit: 5})",
+                    "",
+                    "calendars.each {|calendar|",
+                    "    puts calendar",
+                    "}"
+                ]
+            },
+            {
+                "image": "Python.svg",
+                "title": "Python",
+                "lines": [
+                    "events = nylas.events.list(",
+                    "  grant_id,",
+                    "  query_params={",
+                    "    \"calendar_id\": 1",
+                    "  }",
+                    ")"
+                ]
+            },
+            {
+                "image": "Java.svg",
+                "title": "Java",
+                "lines": [
+                    "import com.nylas.NylasClient;",
+                    "import com.nylas.models.*;",
+                    "import java.util.List;",
+                    "",
+                    "public class read_calendars {",
+                    "    public static void main(String[] args) throws NylasSdkTimeoutError, NylasApiError {",
+                    "        NylasClient nylas = new NylasClient.Builder(\"<API_KEY>\").build();",
+                    "        ListCalendersQueryParams listCalendersQueryParams = new",
+                    "        ListCalendersQueryParams.Builder().limit(5).build();",
+                    "        List<Calendar> calendars = nylas.calendars().list(dotenv.get(\"CALENDAR_ID\"),",
+                    "        listCalendersQueryParams).getData();",
+                    "",
+                    "        for (Calendar calendar : calendars) {",
+                    "            System.out.println(calendar);",
+                    "        }",
+                    "    }",
+                    "}"
+                ]
+            },
+            {
+                "image": "Curl.svg",
+                "title": "Curl",
+                "lines": [
+                    "curl --request GET \\",
+                    "--url https://api.us.nylas.com/v3/grants/<GRANT_ID>/events \\",
+                    "--header 'Accept: application/json' \\",
+                    "--header 'Authorization: Bearer <API_KEY_OR_ACCESS_TOKEN>' \\",
+                    "--header 'Content-Type: application/json'"
+                ]
+            },
+            {
+                "image": "Response.svg",
+                "title": "Response",
+                "lines": [
+                    "{",
+                    "  \"type\": \"event.created1\",",
+                    "  \"data\": {",
+                    "    \"object\": {",
+                    "      \"busy\": true,",
+                    "      \"calendar_id\": \"mock-name%40nylas.com\",",
+                    "      \"created_at\": 1234567890,",
+                    "      \"description\": \"mock description\",",
+                    "      \"hide_participants\": false,",
+                    "      \"ical_uid\": \"mock_uids@google.com\",",
+                    "      \"id\": \"mock-data-id\",",
+                    "      \"object\": \"event\",",
+                    "      \"owner\": \"Mock Owner \",",
+                    "      \"organizer\": {",
+                    "        \"name\": \"mock organizer name\",",
+                    "        \"email\": \"mock_email@example.com\"",
+                    "      },",
+                    "      \"participants\": [",
+                    "        {",
+                    "          \"email\": \"mockParticipantsA@example.com\",",
+                    "          \"name\": \"mockParticipantsA\",",
+                    "          \"status\": \"yes\"",
+                    "        },",
+                    "        {",
+                    "          \"email\": \"mockParticipantsB@example.comm\",",
+                    "          \"name\": \"mockParticipantsB\",",
+                    "          \"status\": \"noreply\"",
+                    "        }",
+                    "      ],",
+                    "      \"read_only\": false,",
+                    "      \"reminders\": null,",
+                    "      \"status\": \"confirmed\",",
+                    "      \"title\": \"mock_title\",",
+                    "      \"updated_at\": 1234567890,",
+                    "      \"when\": {",
+                    "        \"start_time\": 1234567890,",
+                    "        \"start_timezone\": \"America/Edmonton\",",
+                    "        \"end_time\": 1234567890,",
+                    "        \"end_timezone\": \"America/Edmonton\",",
+                    "        \"object\": \"timespan\"",
+                    "      }",
+                    "    }",
+                    "  }",
+                    "}"
+                ]
+            }
+        ],
+        "icon": "FaGithub",
+        "text": "View on Github"
+    },
+    "Customers": {
+        "tag": "Customers",
+        "title": "Powering the world’s best product teams",
+        "description": "Trusted by 250,000+ developers and growing.",
+        "companies": [
+            {
+                "logo": "logo-crunchbase.svg",
+                "headline": "Crunchbase increases sales productivity and bookings with Nylas",
+                "quote": "Adding bi-directional email sync provides our users with a way to increase their productivity within the Crunchbase platform while encouraging upsells to a new pricing tier with premium features.",
+                "result_metrics": [
+                    {
+                        "value": "1 new",
+                        "label": "pricing tier added to increase revenue"
+                    },
+                    {
+                        "value": "$75k",
+                        "label": "saved from Google security review"
+                    }
+                ],
+                "cta": "Read the full story → ",
+                "person": {
+                    "name": "Monika Abraham",
+                    "role": "Product Ops Manager @ Crunchbase"
+                },
+                "products_used_title": "Product used",
+                "products_used": [
+                    "calendar-color.svg",
+                    "Calendar API"
+                ]
+            },
+            {
+                "logo": "Dialpad.png",
+                "headline": "Dialpad launches secure, reliable contact sync while saving developer resources",
+                "quote": "One of the advantages of integrating with Nylas was how straightforward it was to sync contacts across multiple service providers and regardless of which version of Exchange our customers use.",
+                "result_metrics": [
+                    {
+                        "value": "2 days",
+                        "label": "to launchable code with Nylas"
+                    },
+                    {
+                        "value": "6+ months",
+                        "label": "cut from development timelines"
+                    }
+                ],
+                "cta": "Read the full story → ",
+                "person": {
+                    "name": "Stefan Roesch",
+                    "role": "Software Engineer @ Dialpad"
+                },
+                "products_used_title": "Products used",
+                "products_used": [
+                    "email-color.svg",
+                    "Email API",
+                    "calendar-color.svg",
+                    "Calendar API",
+                    "contact-color.svg",
+                    "Contact API"
+                ]
+            },
+            {
+                "logo": "Salesloft.svg",
+                "headline": "Salesloft partners with Nylas to unlock new enterprise market",
+                "quote": "“We have millions of emails sent each week. Nylas frees us up to focus on delivering new features to our customers and working with our data science team on exciting new projects.”",
+                "person": {
+                    "name": "Nora Ignatius",
+                    "role": "Product Manager @ Salesloft"
+                },
+                "products_used_title": "Products used",
+                "products_used": [
+                    "email-color.svg",
+                    "Email API",
+                    "calendar-color.svg",
+                    "Calendar API"
+                ],
+                "result_metrics": [
+                    {
+                        "value": "10+",
+                        "label": "full-time engineers retasked to other work"
+                    },
+                    {
+                        "value": "25%",
+                        "label": "of maintenance team resources saved"
+                    }
+                ],
+                "cta": "Read the full story → "
+            },
+            {
+                "logo": "logo-ceridian-1.svg",
+                "headline": "Ceridian reduces manual work for recruiters with interview scheduling",
+                "quote": "“By partnering with Nylas we were able to solve technical obstacles that would’ve taken us a lot longer on our own and required a much larger investment of resources.”",
+                "result_metrics": [
+                    {
+                        "value": "1 year",
+                        "label": "saved in development time and resources"
+                    },
+                    {
+                        "value": "1 API",
+                        "label": "all major calendar providers"
+                    }
+                ],
+                "cta": "Watch the video → ",
+                "person": {
+                    "name": "John Whyte",
+                    "role": "Director of Product Management @ Ceridian"
+                },
+                "products_used_title": "Product used",
+                "products_used": [
+                    "calendar-color.svg",
+                    "Calendar API"
+                ]
+            }
+        ]
+    },
     "DevelopmentSpeed": {
         "information": [
             {
@@ -345,7 +456,6 @@
                 "description": "Nylas APIs simplifies integration complexities, offering a unified API solution tailored for developers."
             }
         ],
-
         "infoCards": [
             {
                 "image": "Webhooks-2.svg",
