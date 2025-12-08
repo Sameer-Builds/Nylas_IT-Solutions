@@ -5,7 +5,8 @@ function Future() {
     const {future} = useSiteData();
     return (
         <>
-<div className="bg-[#111323] px-10 mx-auto  
+        <div className='bg-[#111323]'>
+<div className=" px-10 mx-auto  
                 container flex items-center gap-40">
     <div className="max-w-xl">
         <p className="text-5xl font-semibold text-white">
@@ -40,7 +41,7 @@ function Future() {
     
 </div>
 
-
+</div>
         </>
     )
 }

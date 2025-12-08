@@ -8,7 +8,9 @@ function DevelopmentSpeed() {
     const { DevelopmentSpeed } = useSiteData();
 
     return (
-        <div className="bg-[#111323] container px-6 py-16">
+        <>
+        <div className='bg-[#111323]'>
+        <div className="container px-6 py-16">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
                 <div className="space-y-6">
                     <div>
@@ -43,6 +45,8 @@ function DevelopmentSpeed() {
 
             </div>
         </div>
+        </div>
+        </>
     );
 }
 
