@@ -11,7 +11,7 @@ function DevelopmentSpeed() {
         <>
         <div className='bg-[#111323]'>
         <div className="container px-6 py-16">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+            <div className="grid grid-cols-1  md:grid-cols-1 lg:grid-cols-2 gap-10">
                 <div className="">
                     <div>
                         {DevelopmentSpeed.information.map((item, index) => (

@@ -37,11 +37,11 @@ function CodeCard() {
     return (
         <>
             <div className="bg-[#1a2340] rounded-2xl ">
-                <div className=" text-white p-8 rounded-2xl shadow-xl w-full max-w-5xl mx-auto">
-                    <div className="flex justify-between items-center mb-6">
+                <div className=" text-white p-6 rounded-2xl shadow-xl w-full max-w-5xl mx-auto">
+                    <div className="flex justify-between items-center  mb-6">
 
                         <select
-                            className="bg-transparent border border-gray-500 rounded-md px-3 py-1 text-lg"
+                            className="bg-transparent  border border-gray-500 rounded-md lg:px-3 py-1 lg:text-lg"
                             value={selectedTitle}
                             onChange={(e) => setSelectedTitle(Number(e.target.value))}
                         >
@@ -66,7 +66,7 @@ function CodeCard() {
                             </button>
                         ))}
                     </div>
-                    <div className="flex items-center gap-14 mb-6">
+                    <div className="flex items-center gap-5 md:gap-14  lg:gap-14 mb-6">
                         {code.map((item, i) => (
                             <p
                                 key={i}
