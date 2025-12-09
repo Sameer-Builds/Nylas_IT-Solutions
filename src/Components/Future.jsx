@@ -13,7 +13,6 @@ function Future() {
                     <p className="text-4xl lg:text-5xl font-semibold text-white leading-tight">
                         {future.title}
                     </p>
-
                     <p className="pt-5 text-lg lg:text-xl text-gray-200">
                         {future.caption}
                     </p>

@@ -41,7 +41,7 @@ function CodeCard() {
                     <div className="flex justify-between items-center  mb-6">
 
                         <select
-                            className="bg-transparent  border border-gray-500 rounded-md lg:px-3 py-1 lg:text-lg"
+                            className="bg-transparent  border border-gray-500 rounded-md lg:px-3 py-1 text-sm lg:text-lg"
                             value={selectedTitle}
                             onChange={(e) => setSelectedTitle(Number(e.target.value))}
                         >
@@ -57,7 +57,7 @@ function CodeCard() {
                             <button
                                 key={i}
                                 onClick={() => setActiveIndex(i)}
-                                className={`flex items-center justify-center w-15 h-20 rounded-xl transition-all ${activeIndex === i
+                                className={`flex items-center justify-center w-14  rounded-xl transition-all ${activeIndex === i
                                     ? "bg-[#32407a] shadow-xl"
                                     : "bg-transparent opacity-60 hover:opacity-100"
                                     }`}
@@ -66,7 +66,7 @@ function CodeCard() {
                             </button>
                         ))}
                     </div>
-                    <div className="flex items-center gap-5 md:gap-14  lg:gap-14 mb-6">
+                    <div className="flex items-center  gap-5 md:gap-13  lg:gap-13 mb-6">
                         {code.map((item, i) => (
                             <p
                                 key={i}

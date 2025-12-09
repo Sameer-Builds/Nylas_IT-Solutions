@@ -40,7 +40,7 @@ function Footer() {
                         })}
                     </div>
                 </div>
-                <div className=" grid  grid-cols-1  sm:grid-cols-2  md:grid-cols-3  lg:grid-cols-6  gap-16 mt-10 px-10 ">
+                <div className=" grid grid-cols-2  md:grid-cols-3  lg:grid-cols-6  gap-16 mt-10 px-10 ">
                     {footer.sections.map((section, i) => (
                         <div key={i}>
                             <h3 className="font-semibold text-white mb-4">{section.title}</h3>
