@@ -6,7 +6,7 @@ function Future() {
 
     return (
         <div className="bg-[#111323]">
-            <div className="container mx-auto px-6  
+            <div className="container mx-auto px-10  
                             flex  flex-col md:flex-col lg:flex-row 
                             items-center  lg:gap-40 ">
                 <div className="max-w-xl text-center lg:text-left">
@@ -18,7 +18,7 @@ function Future() {
                     </p>
 
                     <div className="pt-8 flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
-                        <button className="bg-blue-400 text-white font-semibold px-6 py-3 rounded-xl transition">
+                        <button className="bg-blue-400 text-white font-semibold px-6 py-3 rounded-xl transition hover:bg-white hover:text-blue-500 ">
                             {future.button1}
                         </button>
 
@@ -27,7 +27,7 @@ function Future() {
                         </button>
                     </div>
                 </div>
-                <div className="">
+                <div className="rounded-full shadow-2xl pt-10 md:pt-0 lg:pt-0 items-end shadow-blue-500">
                     <img
                         src={future.image}
                         alt="future"

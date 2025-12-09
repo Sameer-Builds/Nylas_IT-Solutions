@@ -25,17 +25,17 @@ function Hero() {
                 </p>
                 <div className="
                     grid grid-cols-2 gap-4 
-                    w-full max-w-md ">
+                      ">
                     <button className="
                         bg-white text-black 
                         hover:text-blue-400 
-                        px-6 py-3 rounded-md 
+                         py-3 rounded-md 
                         transition ">
                         {hero.button1}
                     </button>
                     <button className="
-                        text-white border border-white 
-                        hover:text-blue-400 hover:bg-white 
+                        text-white  border-white 
+                        hover:text-blue-400 
                         px-6 py-3 rounded-md 
                         transition ">
                         {hero.button2}

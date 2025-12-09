@@ -5,11 +5,11 @@
         "buttons": [
             {
                 "label": "Log in >",
-                "variant": "soft"
+                "variant": "default"
             },
             {
                 "label": "Build for free >",
-                "variant": "secondary"
+                "variant": "primary"
             }
         ],
         "navLinks": [
