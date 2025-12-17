@@ -8,8 +8,8 @@ function MeetNylas() {
             <section className='container px-10 py-16 mx-auto'>
                 <div >
                     <div className='px-8'>
-                        <p className='text-blue-700 font-semibold'>{MeetNylas.tag}</p>
-                        <p className=' pt-10 text-3xl  md:w-2xl lg:w-3xl font-semibold'>{MeetNylas.title}</p>
+                        <p className='text-blue-700 font-medium'>{MeetNylas.tag}</p>
+                        <p className=' pt-8 text-3xl  md:w-2xl lg:w-3xl font-semibold'>{MeetNylas.title}</p>
                         <p className="pt-5 w-full text-blue-900 text-lg">
                             {MeetNylas.description}
                         </p>
@@ -30,9 +30,10 @@ function MeetNylas() {
                                 <p className="text-blue-900  md:w-full lg:w-72 text-lg  mt-2">
                                     {item.description}
                                 </p>
-                                <div className="flex items-center gap-2 text-blue-600 font-medium cursor-pointer mt-4">
+                                <div className="group flex items-center gap-2 text-blue-600 font-medium cursor-pointer mt-4">
                                     {item.caption}
-                                    <MdArrowForward size={20} />
+                                    <MdArrowForward  size={20}
+                                        className="transition-transform duration-300 group-hover:translate-x-2"  />
                                 </div>
                             </div>
                         ))}

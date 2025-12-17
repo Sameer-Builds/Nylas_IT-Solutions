@@ -354,7 +354,8 @@
                         "label": "saved from Google security review"
                     }
                 ],
-                "cta": "Read the full story → ",
+                "cta": "Read the full story",
+                "icon": "MdArrowForward",
                 "person": {
                     "image":"Monika.png",
                     "name": "Monika Abraham",
@@ -380,7 +381,7 @@
                         "label": "cut from development timelines"
                     }
                 ],
-                "cta": "Read the full story → ",
+                "cta": "Read the full story",
                 "person": {
                     "image":"Sefan.png",
                     "name": "Stefan Roesch",
@@ -422,7 +423,7 @@
                         "label": "of maintenance team resources saved"
                     }
                 ],
-                "cta": "Read the full story → "
+                "cta": "Read the full story"
             },
             {
                 "logo": "logo-ceridian-1.svg",
@@ -528,7 +529,8 @@
         "title": "Start building the future",
         "caption": "Get your API key and connect up to 5 accounts for free.",
         "button1": "Build for free",
-        "button2": "Contact sales →",
+        "button2": "Contact sales",
+        "icon": "MdArrowForward",
         "image": "Group-117.png"
     },
     "footer": {

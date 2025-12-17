@@ -1,5 +1,7 @@
 import React from 'react'
 import { useSiteData } from '../context/SiteDataContext'
+import { MdArrowForward } from "react-icons/md";
+
 
 function Future() {
     const { future } = useSiteData();
@@ -22,8 +24,10 @@ function Future() {
                             {future.button1}
                         </button>
 
-                        <button className="text-white font-semibold hover:text-blue-400 px-6 py-3 rounded-md transition">
+                        <button className= "group flex items-center gap-2 text-white font-semibold hover:text-blue-400 px-6 py-3 rounded-md transition">
                             {future.button2}
+                            <MdArrowForward size={20}
+                                className="  transition-transform duration-300 group-hover:translate-x-2" />
                         </button>
                     </div>
                 </div>

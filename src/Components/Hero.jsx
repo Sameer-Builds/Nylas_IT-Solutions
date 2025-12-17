@@ -12,10 +12,10 @@ function Hero() {
             <div className="container mx-auto px-6 py-20 grid grid-cols-1 place-items-center text-center gap-6">
                 <h1 className="
                     text-3xl sm:text-4xl md:text-5xl lg:text-6xl 
-                    font-semibold leading-tight max-w-4xl">
-                    Integrate <span className="text-blue-500">inbox</span>,{" "}
-                    <span className="text-blue-500">calendar</span> and{" "}
-                    <span className="text-blue-500">meetings</span> into your app
+                    leading-tight tracking-tighter font-medium  max-w-3xl">
+                    Integrate <span className="text-cyan-400">inbox</span>,{" "}
+                    <span className="text-cyan-400">calendar</span> and{" "}
+                    <span className="text-cyan-400">meetings</span> into your app
                 </h1>
                 <p className="
                     text-base sm:text-lg md:text-xl 

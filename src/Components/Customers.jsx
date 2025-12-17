@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useSiteData } from "../context/SiteDataContext";
+import { MdArrowForward } from "react-icons/md";
 
 function CompanyShowcase() {
     const { Customers } = useSiteData();
@@ -59,8 +60,10 @@ function CompanyShowcase() {
                             </h3>
                             <p className="text-gray-600 mt-2 text-lg pr-5">
                                 {selected.result_metrics[0].label} </p>
-                            <button className="mt-10 text-blue-600 font-semibold text-lg">
+                            <button className=" flex items-center gap-2 group mt-10 text-blue-600 font-semibold text-lg">
                                 {selected.cta}
+                                <MdArrowForward size={20}
+                                    className="  transition-transform duration-300 group-hover:translate-x-2" />
                             </button>
                         </div>
                         <div>
