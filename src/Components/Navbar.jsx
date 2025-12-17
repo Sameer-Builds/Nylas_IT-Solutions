@@ -3,6 +3,7 @@ import { useSiteData } from "../context/SiteDataContext";
 import { MdKeyboardArrowDown, MdKeyboardArrowRight } from "react-icons/md";
 import { HiMenu, HiX } from "react-icons/hi";
 import Button from "./Button";
+import { Link } from "react-router-dom";
 
 function Navbar() {
     const { navbar } = useSiteData();
@@ -38,8 +39,9 @@ function Navbar() {
                     {navbar.navLinks.map((item, i) => {
                         const Icon = icons[item.icon];
                         return (
-                            <li
-                                key={i}
+                            <li key={i} >
+                                <Link
+                                to={item.path}
                                 className={`group inline-flex items-center gap-1 p-2 rounded-md cursor-pointer 
                                         transition duration-200
                                         ${isScrolled
@@ -53,6 +55,7 @@ function Navbar() {
                                         className="transition-transform duration-300 group-hover:rotate-180"
                                     />
                                 )}
+                                </Link>
                             </li>
                         );
                     })}
@@ -81,12 +84,14 @@ function Navbar() {
                         {navbar.navLinks.map((item, i) => {
                             const Icon = icons[item.icon];
                             return (
-                                <li
-                                    key={i}
+                                <li key={i} >
+                                    <Link
+                                    to={item.path}
                                     className="flex items-center justify-between py-3 border-b border-gray-500/20"
                                 >
                                     {item.text}
                                     {Icon && <Icon size={16} />}
+                                    </Link>
                                 </li>
                             );
                         })}

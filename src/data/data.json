@@ -15,26 +15,26 @@
         "navLinks": [
             {
                 "text": "Products",
-                "path": "/",
+                "path": "/products",
                 "icon": "MdKeyboardArrowDown"
             },
             {
                 "text": "Solutions",
-                "path": "/"
+                "path": "/solutions"
             },
             {
                 "text": "Developers",
-                "path": "/",
+                "path": "/developers",
                 "icon": "MdKeyboardArrowDown"
             },
             {
                 "text": "Resources",
-                "path": "/",
+                "path": "/resources",
                 "icon": "MdKeyboardArrowDown"
             },
             {
                 "text": "Pricing",
-                "path": "/"
+                "path": "/pricing"
             },
             {
                 "text": "Contact sales",

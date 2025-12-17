@@ -1,27 +1,29 @@
-import React from 'react'
-import Navbar from './Components/Navbar'
-import Hero from './Components/Hero'
-import Logos from './Components/Logos'
-import MeetNylas from './Components/MeetNylas'
-import AccordionSection from './Components/AccordionSection'
-import DevelopmentSpeed from './Components/DevelopmentSpeed'
-import InfoCard from './Components/InfoCard'
-import Security from './Components/Security'
-import Footer from './Components/Footer'
-import Customers from './Components/Customers'
+import React from 'react';
+import {Routes , Route} from "react-router-dom";
+import Navbar from './Components/Navbar';
+import Footer from './Components/Footer';
+import MainPage from './Components/MainPage';
+import Products from './Components/Products';
+import Solutions from './Components/Solutions';
+import Developers from './Components/Developers';
+import Resources from './Components/Resources';
+import Pricing from './Components/Pricing';
+
+
 
 function App() {
   return (
     <div>
       <Navbar />
-      <Hero />
-      <Logos />
-      <MeetNylas />
-      <AccordionSection />
-      <DevelopmentSpeed />
-      <InfoCard />
-      <Customers />
-      <Security />
+    <Routes>
+      <Route path= "/" element = {<MainPage />} />
+      <Route path= "/products" element = {<Products/>} />
+      <Route path= "/solutions" element = {<Solutions />} />
+      <Route path= "/developers" element = {<Developers />} />
+      <Route path= "/resources" element = {<Resources />} />
+      <Route path= "/pricing" element = {<Pricing />} />
+    </Routes>
+      
       <Footer />
     </div>
   )
