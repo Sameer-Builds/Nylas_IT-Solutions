@@ -2,6 +2,7 @@
     "navbar": {
         "logo": "favicon-1-150x150.png",
         "name": "nylas",
+        "path":"/",
         "buttons": [
             {
                 "label": "Log in >",
@@ -144,7 +145,7 @@
         "tag": "Meet Nylas",
         "title": "A developer-first solution for custom communication experiences",
         "description": "Securely integrate with every email, calendar, and contacts provider using a single interface to streamline your users’ workflows. Build real-time, bi-directional communications in your app up to 40x faster, saving months of development time.",
-        "images": [
+        "ImageCard": [
             {
                 "image": "nylas-email-api-solution.png",
                 "title": "Email API",

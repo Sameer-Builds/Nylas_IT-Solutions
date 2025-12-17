@@ -28,10 +28,12 @@ function Navbar() {
             ${isScrolled ? "bg-white shadow-md" : "bg-black/90"}`}
         >
             <div className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
+                <Link to={navbar.path}>
                 <div className="flex items-center gap-2 cursor-pointer">
                     <img src={navbar.logo} alt="logo" className="h-8" />
                     <p className="text-blue-500 text-2xl font-serif">{navbar.name}</p>
                 </div>
+                </Link>
                 <ul
                     className={`hidden lg:flex items-center gap-5 text-sm transition-all duration-200 
                     ${isScrolled ? "text-black" : "text-white"}`}
