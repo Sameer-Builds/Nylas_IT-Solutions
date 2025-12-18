@@ -657,8 +657,53 @@
                 "icon": "MdArrowForward"
             }
         ],
-                "tag": "Meet Nylas",
-                "subtitle": "APIs made for developers",
-                "subdescription": "Empower teams with APIs built to scale your business, innovate, and deliver value to your customers."
+        "tag": "Meet Nylas",
+        "subtitle": "APIs made for developers",
+        "subdescription": "Empower teams with APIs built to scale your business, innovate, and deliver value to your customers.",
+        "infoCards2": [
+            {
+                "image": "Send-2.svg",
+                "title": "Performance",
+                "description": "Experience seamless integration with one API for all providers, ensuring scalability with instant onboarding, immediate response times, and reduced system load with Nylas’ infrastructure.",
+                "number":"500",
+                "caption":"requests per second"
+            },
+            {
+                "image": "b-1.svg",
+                "title": "Developer experience",
+                "description": "Speed up your development cycle with seamless data sync, OAuth-compliant authentication, and lightning fast direct queries to provider data supported by SDKs in developers’ preferred language.",
+                "number":"40x",
+                "caption":"faster development cycles"
+            },
+            {
+                "image": "Security-2.svg",
+                "title": "Security",
+                "description": "Ensure robust data protection, global privacy compliance, and reliability with Nylas, meeting compliance standards like GDPR, CCPA, GLBA, SOC 2 Type II, ISO 27001, ISO 27701, and HIPAA.",
+                "number":"99.99%",
+                "caption":"intelligence"
+            },
+            {
+                "image": "Lightbulb-1.svg",
+                "title": "Intelligence",
+                "description": "Email inboxes have a wealth of data you can take advantage of to make business decisions. Connect, extract, and filter your email data to fuel custom intelligence solutions in your application.",
+                "number":"360 degree",
+                "caption":"view of real-time buying behaviors"
+            }
+        ],
+        "suggession":{
+            "title":"Ready to start building?",
+            "description":"Discover the power of the Nylas platform and connect up to 5 accounts for free.",
+            "buttons": [
+            {
+                "label": "Start building now",
+                "variant": "normal"
+            },
+            {
+                "label": "Read the docs ",
+                "variant": "secondary"
+            }
+        ]
+        }
+
     }
 }

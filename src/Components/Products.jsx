@@ -1,6 +1,8 @@
 import React from 'react'
 import { useSiteData } from '../context/SiteDataContext'
 import ImageCard from './ImageCard';
+import InfoCard from './InfoCard2';
+import Button from './Button';
 
 function Products() {
     const { products } = useSiteData();
@@ -29,11 +31,36 @@ function Products() {
                         <p className="pt-5 w-full text-blue-900 text-lg">
                             {products.subdescription}
                         </p>
-
+                    </div>
+                    <div className="grid grid-cols-1 lg:grid-cols-4  space-y-5 pt-10 pb-20 ">
+                        {products.infoCards2.map((item, index) => (
+                            <InfoCard
+                                key={index}
+                                image={item.image}
+                                title={item.title}
+                                description={item.description}
+                                number={item.number}
+                                caption={item.caption}
+                            />
+                        ))}
                     </div>
                 </div>
 
+                <div className='bg-[#213571] '>
+                    <div className='container px-6 py-20 mx-auto'>
+                        <p className='text-white text-4xl lg:text-5xl font-medium mx-auto lg:w-3xl ' >{products.suggession.title}</p>
+                        <p className='text-white  py-6  text-lg lg:text-center lg:w-4xl mx-auto lg:pr-11  '>{products.suggession.description}</p>
+                        <div className=" md:flex md:flex-col lg:flex lg:flex-row justify-center   gap-3 space-y-3  md:space-y-0 lg:space-y-0   mt-4">
+                            {products.suggession.buttons.map((btn, i) => (
+                                <Button key={i} variant={btn.variant} >
+                                    {btn.label}
+                                </Button>
+                            ))}
+                        </div>
 
+                    </div>
+
+                </div>
             </section>
         </>
     )
