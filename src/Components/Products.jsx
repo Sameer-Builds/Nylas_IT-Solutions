@@ -1,5 +1,7 @@
 import React from 'react'
 import { useSiteData } from '../context/SiteDataContext'
+import { Disclosure } from "@headlessui/react";
+import { HiPlus, HiMinus } from 'react-icons/hi';
 import ImageCard from './ImageCard';
 import InfoCard from './InfoCard2';
 import Button from './Button';
@@ -57,9 +59,12 @@ function Products() {
                                 </Button>
                             ))}
                         </div>
-
                     </div>
-
+                </div>
+                <div className='container px-6 mx-auto'>
+                    <p className='text-5xl w-10 font-medium'>{products.Faq.title}</p>
+                    <p className='pt-3'>{products.Faq.caption} <span className='text-blue-600 hover:text-black'>{products.Faq.contact}</span></p>
+                    
                 </div>
             </section>
         </>

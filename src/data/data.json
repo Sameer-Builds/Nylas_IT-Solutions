@@ -665,45 +665,76 @@
                 "image": "Send-2.svg",
                 "title": "Performance",
                 "description": "Experience seamless integration with one API for all providers, ensuring scalability with instant onboarding, immediate response times, and reduced system load with Nylas’ infrastructure.",
-                "number":"500",
-                "caption":"requests per second"
+                "number": "500",
+                "caption": "requests per second"
             },
             {
                 "image": "b-1.svg",
                 "title": "Developer experience",
                 "description": "Speed up your development cycle with seamless data sync, OAuth-compliant authentication, and lightning fast direct queries to provider data supported by SDKs in developers’ preferred language.",
-                "number":"40x",
-                "caption":"faster development cycles"
+                "number": "40x",
+                "caption": "faster development cycles"
             },
             {
                 "image": "Security-2.svg",
                 "title": "Security",
                 "description": "Ensure robust data protection, global privacy compliance, and reliability with Nylas, meeting compliance standards like GDPR, CCPA, GLBA, SOC 2 Type II, ISO 27001, ISO 27701, and HIPAA.",
-                "number":"99.99%",
-                "caption":"intelligence"
+                "number": "99.99%",
+                "caption": "intelligence"
             },
             {
                 "image": "Lightbulb-1.svg",
                 "title": "Intelligence",
                 "description": "Email inboxes have a wealth of data you can take advantage of to make business decisions. Connect, extract, and filter your email data to fuel custom intelligence solutions in your application.",
-                "number":"360 degree",
-                "caption":"view of real-time buying behaviors"
+                "number": "360 degree",
+                "caption": "view of real-time buying behaviors"
             }
         ],
-        "suggession":{
-            "title":"Ready to start building?",
-            "description":"Discover the power of the Nylas platform and connect up to 5 accounts for free.",
+        "suggession": {
+            "title": "Ready to start building?",
+            "description": "Discover the power of the Nylas platform and connect up to 5 accounts for free.",
             "buttons": [
+                {
+                    "label": "Start building now",
+                    "variant": "normal"
+                },
+                {
+                    "label": "Read the docs ",
+                    "variant": "secondary"
+                }
+            ]
+        },
+        "Faq": {
+            "title": "Frequently asked questions",
+            "caption": "Need more help?",
+            "contact": "Contact Us!"
+        },
+        "FAQs": [
             {
-                "label": "Start building now",
-                "variant": "normal"
+                "question": "How does Nylas enable more efficient email, calendar, and contact capabilities integration into our applications?",
+                "answer": "Nylas is the only solution allowing companies and developers to effortlessly integrate email, calendar, and contact functionalities across multiple providers into their applications with a single API platform. This approach eliminates the need for multiple third-party integrations, streamlining communication inefficiencies and enhancing customer conversations. By building your integration once with Nylas, you can seamlessly connect multiple services, empowering developers to focus on innovation rather than maintenance and significantly reducing development time and resources.",
+                "icon1": "HiPlus",
+                "icon2": "HiMinus"
             },
             {
-                "label": "Read the docs ",
-                "variant": "secondary"
+                "question": "Why should we partner with you for email connectivity when it’s a core feature of our app? Shouldn’t we be the expert in this area to ensure success for our end users?",
+                "answer": "Partnering with Nylas for email connectivity brings you the expertise and experience we’ve accumulated over almost a decade, especially in dealing with the intricate details of connecting with various service providers. This means you get a comprehensive solution for accessing emails and calendars backed by the support and knowledge of our dedicated support team. This partnership can significantly benefit your application, ensuring a successful integration for your core feature.",
+                "icon1": "HiPlus",
+                "icon2": "HiMinus"
+            },
+            {
+                "question": "How can we trust a third party with our confidential data? Our customers may have concerns about third-party access.",
+                "answer": "We understand the importance of trust and confidentiality, especially in sectors that handle sensitive customer data. To address these concerns, we’ve ensured compliance with key security standards, including SOC 2 Type II, ISO 27001, ISO 27701, HIPAA, and CSA Cloud Security Alliance standards. These compliances demonstrate our commitment to maintaining high-security standards, helping reassure your customers about the safety of their data. For more information on how Nylas safeguards your data, check out our Trust Center. ",
+                "icon1": "HiPlus",
+                "icon2": "HiMinus"
+            },
+            {
+                "question": "Our developer believes integrating email connectivity on their own, using Google/Microsoft documentation, will be easy. Why should we use Nylas instead?",
+                "answer": "While initial assessments may suggest that building the integration in-house is straightforward, our experience tells a different story. Many of our customers initially thought the same, only to discover numerous undocumented details that significantly delayed their launch, increased the project’s complexity, and escalated costs. By choosing our solution, you avoid these pitfalls and benefit from our streamlined, efficient, cost-effective email connectivity approach. Learn more about the true costs of building embedded email, calendar, and contacts in your application and how to optimize your resources in our blog.",
+                "icon1": "HiPlus",
+                "icon2": "HiMinus"
             }
+            
         ]
-        }
-
     }
 }
