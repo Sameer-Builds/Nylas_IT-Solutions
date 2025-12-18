@@ -2,7 +2,7 @@
     "navbar": {
         "logo": "favicon-1-150x150.png",
         "name": "nylas",
-        "path":"/",
+        "path": "/",
         "buttons": [
             {
                 "label": "Log in >",
@@ -358,7 +358,7 @@
                 "cta": "Read the full story",
                 "icon": "MdArrowForward",
                 "person": {
-                    "image":"Monika.png",
+                    "image": "Monika.png",
                     "name": "Monika Abraham",
                     "role": "Product Ops Manager @ Crunchbase"
                 },
@@ -384,7 +384,7 @@
                 ],
                 "cta": "Read the full story",
                 "person": {
-                    "image":"Sefan.png",
+                    "image": "Sefan.png",
                     "name": "Stefan Roesch",
                     "role": "Software Engineer @ Dialpad"
                 },
@@ -403,7 +403,7 @@
                 "headline": "Salesloft partners with Nylas to unlock new enterprise market",
                 "quote": "“We have millions of emails sent each week. Nylas frees us up to focus on delivering new features to our customers and working with our data science team on exciting new projects.”",
                 "person": {
-                    "image":"nora.png",
+                    "image": "nora.png",
                     "name": "Nora Ignatius",
                     "role": "Product Manager @ Salesloft"
                 },
@@ -442,7 +442,7 @@
                 ],
                 "cta": "Watch the video → ",
                 "person": {
-                    "image":"john.png", 
+                    "image": "john.png",
                     "name": "John Whyte",
                     "role": "Director of Product Management @ Ceridian"
                 },
@@ -630,5 +630,35 @@
                 "Do Not Sell or Share My Personal Information"
             ]
         }
+    },
+    "products": {
+        "title": "Code less, deliver more with Nylas’ APIs",
+        "description": "Connect your business application to every major email service provider by leveraging our email, calendar, and contacts APIs.",
+        "ImageCard": [
+            {
+                "image": "nylas-email-api-products.png",
+                "title": "Email API",
+                "description": "Sync, send, and receive emails directly in your business app.",
+                "caption": "Email API",
+                "icon": "MdArrowForward"
+            },
+            {
+                "image": "nylas-calendar-api-products.png",
+                "title": "Calendar API",
+                "description": "Power your users’ calendars with customizable scheduling.",
+                "caption": "Calendar API",
+                "icon": "MdArrowForward"
+            },
+            {
+                "image": "nylas-notetaker-api.png",
+                "title": "Notetaker API",
+                "description": "Join, record, and transcribe meetings to create AI-powered notes across platforms.",
+                "caption": " Notetaker API",
+                "icon": "MdArrowForward"
+            }
+        ],
+                "tag": "Meet Nylas",
+                "subtitle": "APIs made for developers",
+                "subdescription": "Empower teams with APIs built to scale your business, innovate, and deliver value to your customers."
     }
 }

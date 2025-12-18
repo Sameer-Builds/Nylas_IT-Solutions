@@ -16,7 +16,7 @@ function MeetNylas() {
                         </p>
 
                     </div>
-                    <div className="grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3  gap-8 pt-8">
+                    <div className="grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-3  gap-4 pt-8">
                         {MeetNylas.ImageCard.map((item, index) => (
                             <ImageCard
                                 key={index}
@@ -24,7 +24,7 @@ function MeetNylas() {
                                 title={item.title}
                                 description={item.description}
                                 caption={item.caption}
-                                />
+                            />
                         ))}
                     </div>
                 </div>
