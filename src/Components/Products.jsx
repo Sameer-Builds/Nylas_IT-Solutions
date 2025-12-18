@@ -5,6 +5,7 @@ import { HiPlus, HiMinus } from 'react-icons/hi';
 import ImageCard from './ImageCard';
 import InfoCard from './InfoCard2';
 import Button from './Button';
+import FAQ from './Disclosure';
 
 function Products() {
     const { products } = useSiteData();
@@ -61,10 +62,15 @@ function Products() {
                         </div>
                     </div>
                 </div>
-                <div className='container px-6 mx-auto'>
-                    <p className='text-5xl w-10 font-medium'>{products.Faq.title}</p>
-                    <p className='pt-3'>{products.Faq.caption} <span className='text-blue-600 hover:text-black'>{products.Faq.contact}</span></p>
-                    
+                <div className='container px-10 py-30 mx-auto lg:flex justify-between  '>
+                    <div>
+                        <p className='text-2xl lg:text-5xl md:text-3xl w-10 font-medium'>{products.Faq.title}</p>
+                        <p className='pt-3 text-lg'>{products.Faq.caption} <span className='text-blue-600 hover:text-black'>{products.Faq.contact}</span></p>
+                    </div>
+                    <div className='pt-5'>
+                        <FAQ FAQs={products.FAQs} />
+
+                    </div>
                 </div>
             </section>
         </>
