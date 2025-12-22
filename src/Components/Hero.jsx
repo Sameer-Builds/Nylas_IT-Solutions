@@ -25,11 +25,11 @@ function Hero() {
                 </p>
                 <div className="
                     grid grid-cols-2 gap-4 
-                      ">
+                    ">
                     <button className="
                         bg-white text-black 
                         hover:text-blue-400 
-                         py-3 rounded-md 
+                        py-3 rounded-md 
                         transition ">
                         {hero.button1}
                     </button>

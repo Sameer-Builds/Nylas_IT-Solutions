@@ -736,5 +736,21 @@
             }
             
         ]
+    },
+    "solutions":{
+        "IntroSol":[
+            {
+            "backgroundImage":"Nylas-api-bg-scaled.jpeg",
+                "title":"Don’t waste development time rebuilding the same integrations",
+                "description":"Nylas is the unified API to get email, calendar, and meeting data. Launch AI-powered communication features that users expect in a fraction of the time. ",
+                "buttons": [
+            {
+                "label": "Request a demo",
+                "variant": "tertiary"
+            }
+            
+        ]
+            }
+        ]
     }
 }
