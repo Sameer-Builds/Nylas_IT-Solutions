@@ -734,23 +734,90 @@
                 "icon1": "HiPlus",
                 "icon2": "HiMinus"
             }
-            
         ]
     },
-    "solutions":{
-        "IntroSol":[
+    "solutions": {
+        "IntroSol": [
             {
-            "backgroundImage":"Nylas-api-bg-scaled.jpeg",
-                "title":"Don’t waste development time rebuilding the same integrations",
-                "description":"Nylas is the unified API to get email, calendar, and meeting data. Launch AI-powered communication features that users expect in a fraction of the time. ",
+                "backgroundImage": "Nylas-api-bg-scaled.jpeg",
+                "title": "Don’t waste development time rebuilding the same integrations",
+                "description": "Nylas is the unified API to get email, calendar, and meeting data. Launch AI-powered communication features that users expect in a fraction of the time. ",
                 "buttons": [
-            {
-                "label": "Request a demo",
-                "variant": "tertiary"
+                    {
+                        "label": "Request a demo",
+                        "variant": "tertiary"
+                    }
+                ]
             }
-            
-        ]
+        ],
+        "comparison": {
+            "leftLabels": [
+                "Development velocity",
+                "Reliability at scale",
+                "Technical debt",
+                "Engineering productivity",
+                "Integration management",
+                "Security"
+            ],
+            "nylas": {
+                "name": "nylas",
+                "logo": "favicon-1-150x150.png",
+                "items": [
+                    {
+                        "text": "Ship email, calendar, and meeting features in weeks.",
+                        "image": "green-checkmark.svg"
+                    },
+                    {
+                        "text": "Handle rate limits, webhook failures, and provider outages automatically.",
+                        "image": "green-checkmark.svg"
+                    },
+                    {
+                        "text": "Ship with consistent APIs that any developer can understand.",
+                        "image": "green-checkmark.svg"
+                    },
+                    {
+                        "text": "Keep engineers focused on product differentiation. Not debugging integrations.",
+                        "image": "green-checkmark.svg"
+
+                    },
+                    {
+                        "text": "Work with a single API vendor for your most important communication data.",
+                        "image": "green-checkmark.svg"
+                    },
+                    {
+                        "text": "Protect customer data with SOC 2, ISO, and HIPAA compliance built right into your product.",
+                        "image": "green-checkmark.svg"
+                    }
+                ]
+            },
+            "buildYourself": {
+                "items": [
+                    {
+                        "text": "Spend 6–12 months building basic infrastructure for each data source.",
+                        "image": "red-circle.svg"
+                    },
+                    {
+                        "text": "Monitor and patch fragile, siloed integrations from scratch.",
+                        "image": "red-circle.svg"
+                    },
+                    {
+                        "text": "Inherit custom code paths and workarounds for every data provider.",
+                        "image": "red-circle.svg"
+                    },
+                    {
+                        "text": "Lose engineering time to context-switching and putting out fires.",
+                        "image": "red-circle.svg"
+                    },
+                    {
+                        "text": "Debug issues across multiple provider APIs, status pages, and support channels.",
+                        "image": "red-circle.svg"
+                    },
+                    {
+                        "text": "Implement OAuth security, token storage, and compliance frameworks yourself.",
+                        "image": "red-circle.svg"
+                    }
+                ]
             }
-        ]
+        }
     }
 }
