@@ -7,18 +7,24 @@ function Solutions() {
 
     return (
         <>
-            {solutions.IntroSol.map((item , index) =>(
+            {solutions.IntroSol.map((item, index) => (
                 <IntroSol
-                key={index}
+                    key={index}
                     backgroundImage={item.backgroundImage}
                     title={item.title}
                     description={item.description}
                     buttons={item.buttons}
                 />
             ))}
-        <div>
-            
-        </div>
+            <div className="container px-6 py-10 mx-auto">
+                <div className="">
+                    {solutions.comparison.leftLabels.map((item, index) => (
+                        <p key={index} className="" >
+                            {item}
+                        </p>
+            ))}
+                </div>
+            </div>
 
         </>
     );
